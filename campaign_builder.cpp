@@ -28,11 +28,11 @@ optional<Vec2> CampaignBuilder::considerStaticPlayerPos(const Campaign& campaign
 
 static void setCountLimits(Options* options) {
 #ifdef RELEASE
-  options->setLimits(OptionId::MAIN_VILLAINS, 1, 4);
+  options->setLimits(OptionId::MAIN_VILLAINS, 1, 12);
 #else
-  options->setLimits(OptionId::MAIN_VILLAINS, 0, 4);
+  options->setLimits(OptionId::MAIN_VILLAINS, 0, 12);
 #endif
-  options->setLimits(OptionId::LESSER_VILLAINS, 0, 6);
+  options->setLimits(OptionId::LESSER_VILLAINS, 0, 8);
   options->setLimits(OptionId::ALLIES, 0, 4);
   options->setLimits(OptionId::INFLUENCE_SIZE, 3, 6);
 }
